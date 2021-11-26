@@ -1,8 +1,8 @@
 # adventofcode-21
 
-Ein Sammel-Repository für [Advent of Code](https://adventofcode.com) 2021-Lösungen der deutschen [DevCord](http://join.devcord.xyz)-Community.
+Ein Sammel-Repository für [Advent of Code](https://adventofcode.com) 2021-Lösungen der deutschen [DevCord](https://discord.gg/tNMq2K4)-Community.
 
-A repository collecting [Advent of Code](https://adventofcode.com) 2021 solutions made by the German [DevCord](http://join.devcord.xyz) community.
+A repository collecting [Advent of Code](https://adventofcode.com) 2021 solutions made by the German [DevCord](https://discord.gg/tNMq2K4) community.
 
 ## Überblick/Overview
 
