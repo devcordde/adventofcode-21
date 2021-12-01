@@ -2,7 +2,7 @@ use std::fs;
 use std::ops::Add;
 
 fn main() {
-    // File input
+    // File input - may have to change your path.
     let content_string: String = fs::read_to_string("./input.txt").unwrap();
     let contents: Vec<&str> = content_string.lines().collect();
 
