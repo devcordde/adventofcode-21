@@ -24,10 +24,8 @@ fun main() {
         if (it == 0) return@repeat
 
         if (getThreeMeasurementSum(measurements, it - 1) < getThreeMeasurementSum(measurements, it)) {
-            println("$it yes")
             increasedTrippleValues++
         } else {
-            println("$it no")
         }
     }
 
