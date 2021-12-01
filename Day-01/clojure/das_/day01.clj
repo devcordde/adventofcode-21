@@ -1,12 +1,6 @@
 (ns day01
   (:require [clojure.string :as str]))
 
-(defn read-numbers-from-file [file]
-  (->> file
-      (slurp)
-      (str/split-lines)
-      (map #(Integer/valueOf %))))
-
 (defn count-increasing-numbers [window coll]
   (->> coll
        (partition window 1)
@@ -19,6 +13,12 @@
 (defn part-1 [input] (count-increasing-numbers 1 input))
 
 (defn part-2 [input] (count-increasing-numbers 3 input))
+
+(defn read-numbers-from-file [file]
+  (->> file
+       (slurp)
+       (str/split-lines)
+       (map #(Integer/parseInt %))))
 
 (defn -main [& args]
   (if (not= (count args) 0)
