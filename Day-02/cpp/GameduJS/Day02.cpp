@@ -5,6 +5,7 @@
 
 int x = 0;
 int y = 0;
+int aim = 0;
 
 std::vector<std::string> split(std::string string, std::string delimiter);
 
@@ -22,6 +23,8 @@ int main()
     {
         commandCollection.push_back(line);
     }
+
+    // Part 1
 
     for(int i = 0; i < commandCollection.size(); ++i)
     {
@@ -46,8 +49,31 @@ int main()
 
     }
 
-    std::cout << "X: "<< x << " Y: "<< y << std::endl;
-    std::cout << "Solution: " << x * y << std::endl;
+    std::cout << " Part 1 solution: " << x * y << std::endl;
+    x = 0;
+    y = 0;
+
+    // Part 2
+    for(int i = 0; i < commandCollection.size(); ++i)
+    {
+        std::string commands = commandCollection[i];
+        std::vector<std::string> commandSplit = split(commands, " ");
+
+        std::string command = commandSplit[0];
+        int commandValue = std::stoi(commandSplit[1]);
+
+        if(command == "down")
+            aim+=commandValue;
+        if(command == "up")
+            aim-=commandValue;
+        if(command == "forward")
+        {
+            x+=commandValue;
+            y+=aim * commandValue;
+        }
+    }
+
+    std::cout << "Part 2 solution: " << x * y << std::endl;
 
     return 0;
 }
