@@ -1,12 +1,11 @@
 (ns day02
   (:require [clojure.string :as str]))
 
-(defn read-input-1 [input]
+(defn read-input [input]
   (->> input
        (str/split-lines)
        (map #(str/split % #" "))
-       (map #(list (first %) (Integer/parseInt (second %))))
-       (group-by first)))
+       (map #(list (first %) (Integer/parseInt (second %))))))
 
 (defn sum-map [key map]
   (->> (get map key)
@@ -14,21 +13,13 @@
        (reduce +)))
 
 (defn part-1 [input]
-  (let [actions (read-input-1 input)
+  (let [actions (group-by first (read-input input))
         horizontal (sum-map "forward" actions)
-        vertical-plus (sum-map "down" actions)
-        vertical-minus (sum-map "up" actions)
-        vertical (- vertical-plus vertical-minus)]
+        vertical (- (sum-map "down" actions) (sum-map "up" actions))]
     (* horizontal vertical)))
 
-(defn read-input-2 [input]
-  (->> input
-       (str/split-lines)
-       (map #(str/split % #" "))
-       (map #(list (first %) (Integer/parseInt (second %))))))
-
 (defn part-2 [input]
-  (loop [inputs (read-input-2 input)
+  (loop [inputs (read-input input)
          horizontal 0
          vertical 0
          aim 0]
