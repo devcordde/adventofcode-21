@@ -31,7 +31,6 @@
           "down" (recur (rest inputs) horizontal vertical (+ aim value))
           "forward" (recur (rest inputs) (+ horizontal value) (+ vertical (* aim value)) aim))))))
 
-
 (defn -main [& args]
   (println (part-1 (slurp (first args))))
   (println (part-2 (slurp (first args)))))
