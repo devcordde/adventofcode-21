@@ -31,6 +31,15 @@ func main() {
 	}
 
 	fmt.Println("Part 1: Depth: " + fmt.Sprint(depth) + " Horizontal: " + fmt.Sprint(horizontal) + " Multiplied: " + fmt.Sprint(horizontal * depth))
+
+	depth = 0
+	horizontal = 0
+
+	for i := 0; i < len(instructionArray); i++ {
+
+
+	}
+
 }
 
 // readLines reads a whole file into memory
