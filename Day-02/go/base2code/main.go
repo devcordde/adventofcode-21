@@ -1,5 +1,13 @@
 package main
 
+import (
+	"bufio"
+	"strings"
+	"os"
+	"fmt"
+	"strconv"
+)
+
 func main() {
 	instructionArray, err := readLines("input-day-2")
 	if err != nil {
@@ -9,18 +17,20 @@ func main() {
 	depth := 0
 	horizontal := 0
 
-	for i := 1; i < len(instructionArray); i++ {
-		lineSplit := strings.Split(instructionArray, " ")
+	for i := 0; i < len(instructionArray); i++ {
+		lineSplit := strings.Split(instructionArray[i], " ")
 		instruction := lineSplit[0]
 		value, _ := strconv.Atoi(lineSplit[1])
 		if instruction == "forward" {
 			horizontal += value
 		} else if instruction == "up" {
-			depth += value
-		} else if instruction == "down" {
 			depth -= value
+		} else if instruction == "down" {
+			depth += value
 		}
 	}
+
+	fmt.Println("Part 1: Depth: " + fmt.Sprint(depth) + " Horizontal: " + fmt.Sprint(horizontal) + " Multiplied: " + fmt.Sprint(horizontal * depth))
 }
 
 // readLines reads a whole file into memory
