@@ -2,10 +2,10 @@ package main
 
 import (
 	"bufio"
-	"strings"
-	"os"
 	"fmt"
+	"os"
 	"strconv"
+	"strings"
 )
 
 func main() {
@@ -30,15 +30,27 @@ func main() {
 		}
 	}
 
-	fmt.Println("Part 1: Depth: " + fmt.Sprint(depth) + " Horizontal: " + fmt.Sprint(horizontal) + " Multiplied: " + fmt.Sprint(horizontal * depth))
+	fmt.Println("Part 1: Depth: " + fmt.Sprint(depth) + " Horizontal: " + fmt.Sprint(horizontal) + " Multiplied: " + fmt.Sprint(horizontal*depth))
 
 	depth = 0
 	horizontal = 0
+	aim := 0
 
 	for i := 0; i < len(instructionArray); i++ {
-
-
+		lineSplit := strings.Split(instructionArray[i], " ")
+		instruction := lineSplit[0]
+		value, _ := strconv.Atoi(lineSplit[1])
+		if instruction == "forward" {
+			horizontal += value
+			depth += value * aim
+		} else if instruction == "up" {
+			aim -= value
+		} else if instruction == "down" {
+			aim += value
+		}
 	}
+
+	fmt.Println("Part 1: Depth: " + fmt.Sprint(depth) + " Horizontal: " + fmt.Sprint(horizontal) + " Multiplied: " + fmt.Sprint(horizontal*depth))
 
 }
 
