@@ -12,9 +12,9 @@ Here's an overview of the completeness as well as the existing solutions and lan
 
 | Day/Lang | Java    | Python  | Scala   | Kotlin  | Ruby    | Clojure | Go      | Rust    | C++     | BQN     | SQL    |
 | -------- | ------  | ------  | ------  | ------  | ------  | ------  | ------  | ------  | ------  | ------  | ------ |
-| 01       | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ❌     |
-| 02       | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | (✅)   |
-| 03       | ✅      | ✅      | ✅      | ❌      | (✅)    | ❌      | ❌      | ❌      | ✅      | ✅      | ❌     |
+| 01 - Sonar Sweep       | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ❌     |
+| 02 - Dive!      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | (✅)   |
+| 03 - Binary Diagnostic      | ✅      | ✅      | ✅      | ❌      | (✅)    | ❌      | ❌      | ❌      | ✅      | ✅      | ❌     |
 
 ❌   = Keine Lösung/No solution,
 ✅   = Voll gelöst/Fully solved,
