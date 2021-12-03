@@ -1,6 +1,3 @@
-from select import epoll
-
-
 def task1():
     gamma = ''
     epsilon = ''
