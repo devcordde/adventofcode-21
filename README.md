@@ -16,8 +16,8 @@ Here's an overview of the completeness as well as the existing solutions and lan
 | 02 - Dive!                | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | (✅)   |
 | 03 - Binary Diagnostic    | ✅      | ✅      | ✅      | ✅      | (✅)    | (✅)    | ❌      | ✅      | ✅      | ✅      | ❌     |
 | 04 - Giant Squid          | ❌      | ✅      | ✅      | ✅      | ❌      | ❌      | ❌      | ❌      | ✅      | ✅      | ❌     |
-| 05 - Hydrothermal Venture | ❌      | ✅      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌     |
-| 06 - Lanternfish          | ❌      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌     |
+| 05 - Hydrothermal Venture | ❌      | ✅      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ✅      | ❌     |
+| 06 - Lanternfish          | ❌      | ✅      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ✅      | ❌     |
 
 ❌   = Keine Lösung/No solution,
 ✅   = Voll gelöst/Fully solved,
