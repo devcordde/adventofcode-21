@@ -17,7 +17,7 @@ Here's an overview of the completeness as well as the existing solutions and lan
 | 03 - Binary Diagnostic                | ✅      | ✅      | ✅      | ✅      | (✅)    | (✅)    | ❌      | ✅      | ✅      | ✅      | ❌     |
 | 04 - Giant Squid                      | ❌      | ✅      | ✅      | ✅      | ❌      | ❌      | ❌      | ❌      | ✅      | ✅      | ❌     |
 | 05 - Hydrothermal Venture             | ❌      | ✅      | ✅      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ✅      | ❌     |
-| 06 - Lanternfish                      | ❌      | ✅      | ✅      | ✅      | ❌      | ✅      | ❌      | ❌      | ❌      | ✅      | ❌     |
+| 06 - Lanternfish                      | ❌      | ✅      | ✅      | ✅      | ❌      | ✅      | ❌      | ✅      | ❌      | ✅      | ❌     |
 | 07 - The Treachery of Whales          | ❌      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ✅      | ❌      | ✅      | ❌     |
 
 ❌   = Keine Lösung/No solution,
