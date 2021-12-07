@@ -10,14 +10,15 @@ Hier ist ein Überblick über die Vollständigkeit sowie die existierenden Lösu
 
 Here's an overview of the completeness as well as the existing solutions and languages used in this repository:
 
-| Day/Lang                  | Java    | Python  | Scala   | Kotlin  | Ruby    | Clojure | Go      | Rust    | C++     | BQN     | SQL    |
-|---------------------------| ------  | ------  | ------  | ------  | ------  | ------  | ------  | ------  | ------  | ------  | ------ |
-| 01 - Sonar Sweep          | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ❌     |
-| 02 - Dive!                | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | (✅)   |
-| 03 - Binary Diagnostic    | ✅      | ✅      | ✅      | ✅      | (✅)    | (✅)    | ❌      | ✅      | ✅      | ✅      | ❌     |
-| 04 - Giant Squid          | ❌      | ✅      | ✅      | ✅      | ❌      | ❌      | ❌      | ❌      | ✅      | ✅      | ❌     |
-| 05 - Hydrothermal Venture | ❌      | ✅      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ✅      | ❌     |
-| 06 - Lanternfish          | ❌      | ✅      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ✅      | ❌     |
+| Day/Lang                              | Java    | Python  | Scala   | Kotlin  | Ruby    | Clojure | Go      | Rust    | C++     | BQN     | SQL    |
+|---------------------------------------| ------  | ------  | ------  | ------  | ------  | ------  | ------  | ------  | ------  | ------  | ------ |
+| 01 - Sonar Sweep                      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ❌     |
+| 02 - Dive!                            | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | (✅)   |
+| 03 - Binary Diagnostic                | ✅      | ✅      | ✅      | ✅      | (✅)    | (✅)    | ❌      | ✅      | ✅      | ✅      | ❌     |
+| 04 - Giant Squid                      | ❌      | ✅      | ✅      | ✅      | ❌      | ❌      | ❌      | ❌      | ✅      | ✅      | ❌     |
+| 05 - Hydrothermal Venture             | ❌      | ✅      | ✅      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ✅      | ❌     |
+| 06 - Lanternfish                      | ❌      | ✅      | ✅      | ✅      | ❌      | ✅      | ❌      | ❌      | ❌      | ✅      | ❌     |
+| 07 - The Treachery of Whales          | ❌      | ✅      | ✅      | ✅      | ❌      | ✅      | ❌      | ❌      | ❌      | ✅      | ❌     |
 
 ❌   = Keine Lösung/No solution,
 ✅   = Voll gelöst/Fully solved,
