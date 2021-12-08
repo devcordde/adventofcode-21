@@ -20,7 +20,7 @@
     preferred-bit
     (first (nth coll index (first coll)))))
 
-(defn get-relevant-bits [index preferred-bit frequencies]
+(defn get-frequent-bits-by-frequency-index [index preferred-bit frequencies]
   (mapv #(find-bit index preferred-bit %) frequencies))
 
 (defn binary->int [string]
@@ -29,8 +29,8 @@
 (defn part-1 [file-content]
   (let [input (read-input file-content)
         sorted-frequencies (sorted-bit-frequencies input)
-        gamma (get-relevant-bits 1 1 sorted-frequencies)
-        epsilon (get-relevant-bits 0 0 sorted-frequencies)]
+        gamma (get-frequent-bits-by-frequency-index 1 1 sorted-frequencies)
+        epsilon (get-frequent-bits-by-frequency-index 0 0 sorted-frequencies)]
     (* (binary->int gamma) (binary->int epsilon))))
 
 (defn filter-binary [bit index coll]
@@ -41,7 +41,7 @@
          coll input]
     (if (= i (count (first input)))
       coll
-      (recur (inc i) (filter-binary (nth (get-relevant-bits index index (sorted-bit-frequencies coll)) i) i coll)))))
+      (recur (inc i) (filter-binary (nth (get-frequent-bits-by-frequency-index index index (sorted-bit-frequencies coll)) i) i coll)))))
 
 (defn part-2 [file-content]
   (let [input (read-input file-content)
