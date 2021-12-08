@@ -19,7 +19,7 @@ Here's an overview of the completeness as well as the existing solutions and lan
 | 05 - Hydrothermal Venture             | ❌      | ✅      | ✅      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ✅      | ❌     |
 | 06 - Lanternfish                      | ❌      | ✅      | ✅      | ✅      | ❌      | ✅      | ❌      | ✅      | ❌      | ✅      | ❌     |
 | 07 - The Treachery of Whales          | ❌      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ✅      | ❌      | ✅      | ❌     |
-| 08 - Seven Segment Search             | ❌      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌     |
+| 08 - Seven Segment Search             | ❌      | ✅      | ❌      | ❌      | ❌      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌     |
 
 ❌   = Keine Lösung/No solution,
 ✅   = Voll gelöst/Fully solved,
