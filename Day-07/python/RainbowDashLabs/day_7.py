@@ -1,5 +1,5 @@
 from typing import Callable
-
+from time import time_ns as time
 
 def calc_fuel(center: int, distances: list[int], cost: Callable[[int], int] = lambda x: x * 1):
     return sum([cost(abs(center - distance)) for distance in distances])
@@ -7,21 +7,18 @@ def calc_fuel(center: int, distances: list[int], cost: Callable[[int], int] = la
 
 nums = [int(e) for e in open("puzzle.txt").read().split(",")]
 nums.sort()
-lower_bound = int(len(nums) / 4)
-upper_bound = len(nums) - lower_bound
+# We ignore the first and last third. It is very unlikely that we find the result there.
+lower_bound = nums[int(len(nums) / 3)]
+upper_bound = nums[len(nums) - int(len(nums) / 3)]
 
-# Part 1 solved by median. Might be an accident that it works.
-costs = calc_fuel(nums[round(len(nums) / 2)], nums)
-print(f"Part 1 {costs} by median. Probably correct")
-
+start = time()
 # Part 1 solved by brute force
-# We ignore the first and last quarter. It is very unlikely that we find the result there.
-costs = min([calc_fuel(num, nums) for num in range(nums[lower_bound], nums[upper_bound])])
-print(f"Part 1 {costs} by brute force. Correct")
+costs = min([calc_fuel(num, nums) for num in range(lower_bound, upper_bound)])
+print(f"Part 1 {costs} in {(time() - start) / 1000000} ms")
 
+start = time()
 # Precompute costs for faster calculation. 75 times faster.
 cost_list = [sum(range(num + 1)) for num in range(min(nums), max(nums))]
-# We ignore the first and last quarter. It is very unlikely that we find the result there.
-costs = min([calc_fuel(num, nums, lambda x: cost_list[x]) for num in range(nums[lower_bound], nums[upper_bound])])
+costs = min([calc_fuel(num, nums, lambda x: cost_list[x]) for num in range(lower_bound, upper_bound)])
 
-print(f"Part 2 {costs} by brute force")
+print(f"Part 2 {costs} in {(time() - start) / 1000000} ms")
