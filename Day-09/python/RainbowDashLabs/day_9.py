@@ -11,7 +11,7 @@ class HeightMap:
     def _risk_score(self, x: int, y: int) -> (int, int):
         origin = self._height(x, y)
         heights = [self._height(*e) for e in self._adjacent_points(x, y)]
-        return 1 + origin, self._basin_score(x, y) if all([e > origin for e in heights]) else 0, 0
+        return 1 + origin, self._basin_score(x, y) if all([e > origin for e in heights]) else 0
 
     def _basin_score(self, x, y):
         done = set()
