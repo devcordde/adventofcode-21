@@ -9,23 +9,20 @@ Dot = namedtuple("Dot", "x y")
 
 class Paper:
     def __init__(self, dots: list[list[int, int]]):
-        self.dots: list[Dot] = [Dot(e[0], e[1]) for e in dots]
+        self.dots: list[Dot] = [Dot(*e) for e in dots]
 
-    def fold(self, axis, index):
-        index = int(index)
+    def fold(self, axis: str, index: str):
+        i = int(index)
         if axis == "y":
-            dots = set([Dot(e.x, index - (e.y - index)) for e in self.dots if e.y > index] + [e for e in self.dots if
-                                                                                              e.y < index])
+            self.dots = set([Dot(e.x, i - (e.y - i)) for e in self.dots if e.y > i] + [e for e in self.dots if e.y < i])
         else:
-            dots = set([Dot(index - (e.x - index), e.y) for e in self.dots if e.x > index] + [e for e in self.dots if
-                                                                                              e.x < index])
-        self.dots = dots
+            self.dots = set([Dot(i - (e.x - i), e.y) for e in self.dots if e.x > i] + [e for e in self.dots if e.x < i])
 
     def dot_count(self):
         return len(self.dots)
 
     def __str__(self):
-        row = [' ' for i in range(max([e.x for e in self.dots]) + 1)]
+        row = [' '] * (max([e.x for e in self.dots]) + 1)
         table = [list(row) for i in range(max([e.y for e in self.dots]) + 1)]
         for dot in self.dots:
             table[dot.y][dot.x] = "█"

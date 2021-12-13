@@ -1,4 +1,5 @@
 from typing import Union
+import time
 
 edges = [e.strip() for e in open("puzzle.txt").readlines()]
 
@@ -10,6 +11,7 @@ class Cave:
         self.start = self.name == "start"
         self.end = self.name == "end"
         self.caves = set()
+        self.hash = hash(self.name)
 
     def add_connection(self, cave):
         self.caves.add(cave)
@@ -18,7 +20,7 @@ class Cave:
         return other.name == self.name
 
     def __hash__(self):
-        return hash(self.name)
+        return self.hash
 
     def __repr__(self):
         return self.name
@@ -39,11 +41,8 @@ class Way:
     def split(self, double_small) -> set["Way"]:
         ways: set[Way] = set()
         for e in self.last().caves:
-            if not self.can_add(e, double_small):
-                continue
-            new_caves = list(self.caves)
-            new_caves.append(e)
-            ways.add(Way(new_caves))
+            if self.can_add(e, double_small):
+                ways.add(Way([*self.caves, e]))
         return ways
 
     def has_double_small(self):
@@ -60,11 +59,8 @@ class Way:
             return True
         return cave not in self.caves
 
-    def __repr__(self):
-        return self.caves.__repr__()
-
     def __eq__(self, other):
-        return self.caves == other.caves
+        return self.hash == other.hash
 
     def __hash__(self):
         return self.hash
@@ -94,29 +90,28 @@ class Graph:
     def build_graph(self):
         start = self.get("start")
         ways = {Way(start)}
-        new_ways = set()
         while True:
+            new_ways = set()
             for way in ways:
                 splitted = way.split(self.double_small)
                 if len(splitted):
-                    new_ways = {*new_ways, *splitted}
+                    [new_ways.add(e) for e in splitted]
                 else:
                     if way.last().end:
                         new_ways.add(way)
             if len(new_ways) == len(ways):
                 break
             ways = new_ways
-            new_ways = set()
         self.ways = ways
 
     def get_ways(self) -> list[Way]:
         return self.ways
 
 
+start = time.time()
 graph = Graph(edges)
+print(f"Part one {len(graph.get_ways())} took {round(time.time() - start, 4)} seconds")
 
-print(f"Part one {len(graph.get_ways())}")
-
+start = time.time()
 graph = Graph(edges, double_small=True)
-# this one may take a while...
-print(f"Part two {len(graph.get_ways())}")
+print(f"Part two {len(graph.get_ways())} took {round(time.time() - start, 4)} seconds")
