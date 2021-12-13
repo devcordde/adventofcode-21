@@ -16,10 +16,15 @@ Here's an overview of the completeness as well as the existing solutions and lan
 | 02 - Dive!                            | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | ✅      | (✅)   |
 | 03 - Binary Diagnostic                | ✅      | ✅      | ✅      | ✅      | (✅)    | ✅      | ❌      | ✅      | ✅      | ✅      | ❌     |
 | 04 - Giant Squid                      | ❌      | ✅      | ✅      | ✅      | ❌      | ❌      | ❌      | ❌      | ✅      | ✅      | ❌     |
-| 05 - Hydrothermal Venture             | ❌      | ✅      | ✅      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ✅      | ❌     |
-| 06 - Lanternfish                      | ❌      | ✅      | ✅      | ✅      | ❌      | ✅      | ❌      | ✅      | ❌      | ✅      | ❌     |
-| 07 - The Treachery of Whales          | ❌      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ✅      | ❌      | ✅      | ❌     |
-| 08 - Seven Segment Search             | ❌      | ✅      | ❌      | ❌      | ❌      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌     |
+| 05 - Hydrothermal Venture             | ❌      | ✅      | ✅      | ✅      | ❌      | ❌      | ❌      | ❌      | ✅      | ✅      | ❌     |
+| 06 - Lanternfish                      | ✅      | ✅      | ✅      | ✅      | ❌      | ✅      | ❌      | ✅      | ✅      | ✅      | ❌     |
+| 07 - The Treachery of Whales          | ✅      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ✅      | ❌      | ✅      | ❌     |
+| 08 - Seven Segment Search             | (✅)    | ✅      | ❌      | ❌      | ❌      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌     |
+| 09 - Smoke Basin                      | ✅      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ✅      | ❌     |
+| 10 - Syntax Scoring                   | ❌      | ✅      | ❌      | ❌      | ❌      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌     |
+| 11 - Dumbo Octopus                    | ❌      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌     |
+| 12 - Passage Pathing                  | ❌      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌     |
+| 13 - Transparent Origami              | ❌      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌     |
 
 ❌   = Keine Lösung/No solution,
 ✅   = Voll gelöst/Fully solved,
