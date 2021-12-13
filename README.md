@@ -21,7 +21,7 @@ Here's an overview of the completeness as well as the existing solutions and lan
 | 07 - The Treachery of Whales          | ✅      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ✅      | ❌      | ✅      | ❌     |
 | 08 - Seven Segment Search             | (✅)    | ✅      | ❌      | ❌      | ❌      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌     |
 | 09 - Smoke Basin                      | ✅      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ✅      | ❌     |
-| 10 - Syntax Scoring                   | ❌      | ✅      | ❌      | ❌      | ❌      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌     |
+| 10 - Syntax Scoring                   | ❌      | ✅      | ❌      | ❌      | ❌      | ✅      | ❌      | ❌      | ❌      | ✅      | ❌     |
 | 11 - Dumbo Octopus                    | ❌      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌     |
 | 12 - Passage Pathing                  | ❌      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌     |
 | 13 - Transparent Origami              | ❌      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌     |
