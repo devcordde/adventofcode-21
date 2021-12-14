@@ -18,7 +18,7 @@ Here's an overview of the completeness as well as the existing solutions and lan
 | 04 - Giant Squid                      | ❌      | ✅      | ✅      | ✅      | ❌      | ❌      | ❌      | ❌      | ✅      | ✅      | ❌     |
 | 05 - Hydrothermal Venture             | ❌      | ✅      | ✅      | ✅      | ❌      | ❌      | ❌      | ❌      | ✅      | ✅      | ❌     |
 | 06 - Lanternfish                      | ✅      | ✅      | ✅      | ✅      | ❌      | ✅      | ❌      | ✅      | ✅      | ✅      | ❌     |
-| 07 - The Treachery of Whales          | ✅      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ✅      | ❌      | ✅      | ❌     |
+| 07 - The Treachery of Whales          | ✅      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ✅      | ✅      | ✅      | ❌     |
 | 08 - Seven Segment Search             | (✅)    | ✅      | ❌      | ❌      | ❌      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌     |
 | 09 - Smoke Basin                      | ✅      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ✅      | ❌     |
 | 10 - Syntax Scoring                   | ❌      | ✅      | ❌      | ❌      | ❌      | ✅      | ❌      | ❌      | ❌      | ✅      | ❌     |
