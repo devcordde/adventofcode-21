@@ -14,7 +14,7 @@ public:
     FileReader(std::string path);
     std::vector<std::string> readLines();
     std::vector<int> readLinesAsInt();
-
+    std::vector<std::string> split(const std::string& delimiter, const std::string& s);
 private:
     std::string path;
     std::vector<std::string> collection;
