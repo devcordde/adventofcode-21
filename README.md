@@ -25,6 +25,7 @@ Here's an overview of the completeness as well as the existing solutions and lan
 | 11 - Dumbo Octopus                    | ❌      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌     |
 | 12 - Passage Pathing                  | ❌      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌     |
 | 13 - Transparent Origami              | ❌      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌     |
+| 14 - Extended Polymerization          | ❌      | ✅      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌      | ❌     |
 
 ❌   = Keine Lösung/No solution,
 ✅   = Voll gelöst/Fully solved,
